@@ -1,0 +1,72 @@
+.form {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+  &__label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      font-size: 30px;
+    }
+    &--icon {
+      margin-right: 10px;
+    }
+  }
+  &__input {
+    height: 40px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #fff;
+    transition: border 0.5s ease;
+    @media all and (min-width: 768px) {
+      width: 300px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 500px;
+    }
+    &:hover {
+      border: 2px solid #3298dc;
+    }
+    &:focus {
+      outline: none;
+      border: 2px solid #3298dc;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    width: 70px;
+    padding: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #3298dc;
+    border: 1px solid #3298dc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    &:hover {
+      border: 1px solid #3298dc;
+      background-color: #fff;
+      color: #3298dc;
+    }
+    &:focus {
+      outline: none;
+      border: 2px solid #3298dc;
+    }
+  }
+}
+
+.form__input[placeholder] {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
