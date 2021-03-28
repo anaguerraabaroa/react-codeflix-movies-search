@@ -1,29 +1,21 @@
-// localStorage
-
-const setInLocalStorage = (
-  filterName,
-  filterSpecies,
-  filterStatus,
-  filterGender
-) => {
-  const filters = {
-    name: filterName.toLowerCase(),
-    species: filterSpecies.toLowerCase(),
-    status: filterStatus.toLowerCase(),
-    gender: filterGender,
+// set and get data from localStorage
+const setInLocalStorage = (filterMovie, moviesList, usedSearch) => {
+  const variables = {
+    filterMovie: filterMovie,
+    moviesList: moviesList,
+    usedSearch: usedSearch,
   };
-  localStorage.setItem("filters", JSON.stringify(filters));
+  localStorage.setItem("variables", JSON.stringify(variables));
 };
 
 const getFromLocalStorage = () => {
-  const dataLocalStorage = JSON.parse(localStorage.getItem("filters"));
+  const dataLocalStorage = JSON.parse(localStorage.getItem("variables"));
   return dataLocalStorage !== null
     ? dataLocalStorage
     : {
-        name: "",
-        species: "all",
-        status: "all",
-        gender: [],
+        filterMovie: "",
+        moviesList: [],
+        usedSearch: false,
       };
 };
 

@@ -1,3 +1,5 @@
+@import "../core/variables";
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -7,10 +9,10 @@
   position: fixed;
   bottom: 0;
   padding: 10px;
-  background-color: #3298dc;
-  font-family: "Open Sans", sans-serif;
+  background-color: $primaryColor;
+  font-family: $fontFamily;
   &__small {
-    color: #fff;
+    color: $secondaryColor;
     text-decoration: none;
   }
   &__menu--logos {
@@ -22,7 +24,7 @@
 .github,
 .linkedin,
 .twitter {
-  color: #fff;
+  color: $secondaryColor;
   font-size: 16px;
   text-decoration: none;
 }

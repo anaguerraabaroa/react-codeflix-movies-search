@@ -1,12 +1,13 @@
 @import "core/reset";
+@import "core/variables";
 
 .search {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
+  font-family: $fontFamily;
+  color: $secondaryColor;
   &__msg {
     font-size: 15px;
     @media all and (min-width: 768px) {
@@ -21,9 +22,9 @@
   justify-content: center;
   text-align: center;
   margin: 100px 50px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $fontFamily;
   font-size: 20px;
-  color: #fff;
+  color: $secondaryColor;
   &--icon {
     margin-right: 10px;
   }
@@ -37,8 +38,8 @@
     margin: 0 auto;
     font-weight: 700;
     background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid $secondaryColor;
+    color: $secondaryColor;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
@@ -47,9 +48,9 @@
     appearance: none;
     transition: border 0.5s ease, background-color 0.5s ease, color 0.5s ease;
     &:hover {
-      border: 1px solid #3298dc;
-      background-color: #fff;
-      color: #3298dc;
+      border: 1px solid $primaryColor;
+      background-color: $secondaryColor;
+      color: $primaryColor;
     }
   }
 }

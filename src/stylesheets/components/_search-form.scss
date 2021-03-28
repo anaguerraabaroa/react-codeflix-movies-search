@@ -1,3 +1,5 @@
+@import "../core/variables";
+
 .form {
   padding: 40px;
   text-align: center;
@@ -10,7 +12,7 @@
     margin: 10px;
   }
   &__label {
-    font-family: "Open Sans", sans-serif;
+    font-family: $fontFamily;
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
@@ -25,7 +27,7 @@
     height: 40px;
     cursor: pointer;
     padding: 5px;
-    background-color: #fff;
+    background-color: $secondaryColor;
     transition: border 0.5s ease;
     @media all and (min-width: 768px) {
       width: 300px;
@@ -34,39 +36,39 @@
       width: 500px;
     }
     &:hover {
-      border: 2px solid #3298dc;
+      border: 2px solid $primaryColor;
     }
     &:focus {
       outline: none;
-      border: 2px solid #3298dc;
+      border: 2px solid $primaryColor;
     }
   }
   &__btn {
     cursor: pointer;
     width: 70px;
     padding: 5px;
-    font-family: "Open Sans", sans-serif;
+    font-family: $fontFamily;
     font-weight: 700;
-    color: #fff;
-    background-color: #3298dc;
-    border: 1px solid #3298dc;
+    color: $secondaryColor;
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     transition: border 0.5s ease, background-color 0.5s ease, color 0.5s ease;
     &:hover {
-      border: 1px solid #3298dc;
-      background-color: #fff;
-      color: #3298dc;
+      border: 1px solid $primaryColor;
+      background-color: $secondaryColor;
+      color: $primaryColor;
     }
     &:focus {
       outline: none;
-      border: 2px solid #3298dc;
+      border: 2px solid $primaryColor;
     }
   }
 }
 
 .form__input[placeholder] {
-  font-family: "Open Sans", sans-serif;
+  font-family: $fontFamily;
   font-size: 15px;
 }
