@@ -1,6 +1,6 @@
 // get movies from OMDb API
 const getDataFromApi = (filterMovie) => {
-  return fetch(`http://www.omdbapi.com/?apikey=16495f99&s=${filterMovie}`)
+  return fetch(`https://www.omdbapi.com/?apikey=16495f99&s=${filterMovie}`)
     .then((response) => response.json())
     .then((data) => {
       // fetch is expected to return an array
