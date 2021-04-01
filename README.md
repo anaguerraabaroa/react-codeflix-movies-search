@@ -109,10 +109,6 @@ Codeflix Movies Search
 └── README.md
 ```
 
-## **Screenshots**
-
-![Mobile version](./src/images/codeflix_movies_mobile.png) ![Tablet version](./src/images/codeflix_movies_tablet.png) ![Desktop version](./src/images/codeflix_movies_desktop.png)
-
 ## **License**
 
 This project is licensed under [**MIT License**](https://spdx.org/licenses/MIT.html).
