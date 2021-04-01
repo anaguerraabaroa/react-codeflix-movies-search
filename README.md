@@ -49,7 +49,7 @@ git push
 ## **Project features**
 
 - React app
-- Get movies from **[API](https://www.omdbapi.com)**
+- Get movies from **[OMDb API](https://www.omdbapi.com)**
 - Components structure
 - Render a movie list with movie poster, movie title and release year
 - Form with filter by movie name
