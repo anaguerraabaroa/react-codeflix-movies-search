@@ -1,7 +1,7 @@
 import React from "react";
 import Movie from "./Movie";
 import PropTypes from "prop-types";
-import "../stylesheets/layout/_moviesList.scss";
+import "../stylesheets/layout/_movies-list.scss";
 
 const MoviesList = (props) => {
   // get each movie data
