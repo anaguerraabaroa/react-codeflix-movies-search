@@ -1,4 +1,4 @@
-![Codeflix Search Engine Banner](https://pro.sony/s3/2017/04/08151948/main-banner_1600x450.jpg)
+![Mobile version](./src/images/codeflix_movies_mobile.png) ![Tablet version](./src/images/codeflix_movies_tablet.png) ![Desktop version](./src/images/codeflix_movies_desktop.png)
 
 # **Codeflix Movies Search**
 
