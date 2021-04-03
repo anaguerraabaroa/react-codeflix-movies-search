@@ -6,7 +6,8 @@ const getDetailsFromApi = (props) => {
     .then((response) => response.json())
     .then((movie) => {
       return movie;
-    });
+    })
+    .catch((error) => console.log(`There has been an error: ${error}`));
 };
 
 export default { getDetailsFromApi };

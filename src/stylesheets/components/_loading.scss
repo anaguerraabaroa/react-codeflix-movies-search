@@ -3,7 +3,10 @@
 .loading__wrapper {
   display: flex;
   justify-content: center;
-  padding: 300px;
+  padding: 100px;
+  @media all and (min-width: 768px) {
+    padding: 300px;
+  }
 }
 
 .loading {
