@@ -1,5 +1,6 @@
 import React from "react";
 import Movie from "./Movie";
+import Loading from "./Loading";
 import PropTypes from "prop-types";
 import "../stylesheets/layout/_movies-list.scss";
 
@@ -14,9 +15,15 @@ const MoviesList = (props) => {
   });
 
   return (
-    <section className="movies__results">
-      <ul className="movies__results--list">{movies}</ul>
-    </section>
+    <>
+      {props.isLoading === true ? (
+        <Loading />
+      ) : (
+        <section className="movies__results">
+          <ul className="movies__results--list">{movies}</ul>
+        </section>
+      )}
+    </>
   );
 };
 

@@ -21,6 +21,7 @@ function App() {
   const [filterMovie, setFilterMovie] = useState(dataLocalStorage.filterMovie);
   const [moviesList, setMoviesList] = useState(dataLocalStorage.moviesList);
   const [usedSearch, setUsedSearch] = useState(dataLocalStorage.usedSearch);
+  const [isLoading, setIsLoading] = useState(false);
 
   // events
   const handleChange = (movie) => {
@@ -28,9 +29,11 @@ function App() {
   };
 
   const handleSubmit = () => {
+    setIsLoading(true);
     api.getDataFromApi(filterMovie).then((data) => {
       setMoviesList(data);
       setUsedSearch(true);
+      setIsLoading(false);
     });
   };
 
@@ -47,7 +50,7 @@ function App() {
         There are not results for your search. Please, try again
       </p>
     ) : (
-      <MoviesList moviesList={moviesList} />
+      <MoviesList moviesList={moviesList} isLoading={isLoading} />
     );
   };
 
