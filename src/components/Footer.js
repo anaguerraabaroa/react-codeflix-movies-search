@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer" role="contentinfo">
       <a
         className="footer__small"
-        href="https://anaguerraabaroa.github.io/Codeflix/"
+        href="https://anaguerraabaroa.github.io/codeflix/"
         title="Link to Codeflix Team website"
         target="_blank"
         rel="noreferrer"
