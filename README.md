@@ -378,7 +378,7 @@ const MovieDetails = (props) => {
 
 ### **8. LocalStorage component**
 
-- Set data in localStorage and get data from localStorage
+- Set data in localStorage
 
 ```javascript
 const setInLocalStorage = (filterMovie, moviesList, usedSearch) => {
@@ -389,7 +389,11 @@ const setInLocalStorage = (filterMovie, moviesList, usedSearch) => {
   };
   localStorage.setItem("variables", JSON.stringify(variables));
 };
+```
 
+- Get data from localStorage
+
+```javascript
 const getFromLocalStorage = () => {
   const dataLocalStorage = JSON.parse(localStorage.getItem("variables"));
   return dataLocalStorage !== null
