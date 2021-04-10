@@ -8,6 +8,8 @@ This is a responsive movies search web app developed with [<img src = "https://i
 
 Project inspired by the final exercise of the [**Aprender React JS**](https://github.com/AprendiendoFrontend/Aprendiendo-React/tree/master/search-movies) course.
 
+**[Project URL](https://anaguerraabaroa.github.io/react-codeflix-movies-search/#/)** is available on GitHub Pages.
+
 ## **Quick start guide**
 
 Instructions to start this project:
@@ -31,8 +33,6 @@ npm install
 ```
 npm start
 ```
-
-- **[Project URL](https://anaguerraabaroa.github.io/react-codeflix-movies-search/#/)** is also available on GitHub Pages.
 
 ## **Features**
 
