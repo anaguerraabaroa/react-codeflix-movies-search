@@ -190,7 +190,7 @@ const SearchForm = (props) => {
 };
 ```
 
-### **3. API request component**
+### **3. Movies List API request component**
 
 - Handle fetch to get movies list
 
