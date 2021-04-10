@@ -33,7 +33,7 @@ npm start
 
 - **[Project URL](https://anaguerraabaroa.github.io/react-codeflix-movies-search/#/)** is also available on GitHub Pages.
 
-## **Project features**
+## **Features**
 
 - React app
 - Get movies from **[OMDb API](https://www.omdbapi.com)**
